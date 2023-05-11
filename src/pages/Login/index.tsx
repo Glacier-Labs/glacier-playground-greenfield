@@ -15,6 +15,7 @@ const Login = observer(() => {
           long
           size="large"
           shape="round"
+          status="success"
           onClick={() => {
             store.walltVisible = true
           }}

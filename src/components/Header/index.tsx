@@ -53,7 +53,7 @@ export default function Header() {
               </Menu>
             }
           >
-            <Button type="text">
+            <Button type="text" status="success">
               <div className={styles.account}>
                 {!!domain ? (
                   <a
@@ -74,8 +74,9 @@ export default function Header() {
           </Dropdown>
         )}
         <Button
-          href="https://main.d3tu6wqmeuh03j.amplifyapp.com/"
+          href="https://scan.bnb.glacier.io/"
           type="outline"
+          status="success"
           target="_blank"
         >
           Glacier Scan
