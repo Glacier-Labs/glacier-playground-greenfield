@@ -217,14 +217,6 @@ Join the #Referral Program via my link
             </Breadcrumb>
             <Space direction="vertical" align="end">
               <Button
-                type="outline"
-                status="success"
-                onClick={share}
-                target="_blank"
-              >
-                Share to Twitter
-              </Button>
-              <Button
                 type="primary"
                 status="success"
                 onClick={() => {
