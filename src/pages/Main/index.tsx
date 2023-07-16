@@ -42,7 +42,6 @@ const Main = observer(() => {
         </Space>
         <Button
           type="primary"
-          status="success"
           href="https://www.glacier.io/referral/"
           target="_blank"
           icon={<IconUserAdd />}
@@ -54,7 +53,6 @@ const Main = observer(() => {
         <div className={styles.left}>
           <Button
             type="primary"
-            status="success"
             long
             onClick={() => modals.createNamespace()}
           >
@@ -62,7 +60,6 @@ const Main = observer(() => {
           </Button>
           <Button
             type="outline"
-            status="success"
             long
             icon={<IconPlus />}
             onClick={() => {

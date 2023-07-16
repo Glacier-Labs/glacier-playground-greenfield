@@ -153,7 +153,6 @@ Join the #Referral Program via my link
                 icon={<IconEye />}
                 size="mini"
                 type="primary"
-                status="success"
                 onClick={() => {
                   modals.viewDocument(JSON.stringify(record, null, 2))
                 }}
@@ -162,7 +161,6 @@ Join the #Referral Program via my link
                 icon={<IconEdit />}
                 size="mini"
                 type="primary"
-                status="success"
                 onClick={() => {
                   modals.editDocument(
                     tab.namespace,
@@ -218,7 +216,6 @@ Join the #Referral Program via my link
             <Space direction="vertical" align="end">
               <Button
                 type="primary"
-                status="success"
                 onClick={() => {
                   modals.editDocument(
                     tab.namespace,
@@ -240,13 +237,12 @@ Join the #Referral Program via my link
             />
             <Button
               type="primary"
-              status="success"
               loading={loading}
               onClick={() => list(cmd)}
             >
               Apply
             </Button>
-            <Button type="outline" status="success" onClick={refresh}>
+            <Button type="outline" onClick={refresh}>
               Reset
             </Button>
           </div>

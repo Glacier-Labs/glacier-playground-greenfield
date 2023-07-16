@@ -53,7 +53,7 @@ export default function Header() {
               </Menu>
             }
           >
-            <Button type="text" status="success">
+            <Button type="text">
               <div className={styles.account}>
                 {!!domain ? (
                   <a
@@ -76,7 +76,6 @@ export default function Header() {
         <Button
           href="https://scan.bnb.glacier.io/"
           type="outline"
-          status="success"
           target="_blank"
         >
           Glacier Scan

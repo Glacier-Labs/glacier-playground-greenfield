@@ -52,7 +52,6 @@ const DatasetNode = observer(({ dataset, onMenuClick }: Props) => {
             size="mini"
             icon={<IconPlus />}
             type="primary"
-            status="success"
             onClick={e => {
               e.stopPropagation()
               onMenuClick('createCollection')
@@ -95,7 +94,6 @@ const DatasetNode = observer(({ dataset, onMenuClick }: Props) => {
                 size="mini"
                 icon={<IconEye />}
                 type="primary"
-                status="success"
                 onClick={e => {
                   e.stopPropagation()
                   modals.viewSchema(item.schema)
