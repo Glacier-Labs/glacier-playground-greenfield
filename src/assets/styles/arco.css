@@ -110,9 +110,9 @@ body {
   --arcoblue-2: 190,218,255;
   --arcoblue-3: 148,191,255;
   --arcoblue-4: 106,161,255;
-  --arcoblue-5: 252,217,73;
-  --arcoblue-6: 252,213,53;
-  --arcoblue-7: 14,66,210;
+  --arcoblue-5: 244,202,72;
+  --arcoblue-6: 240,185,11;
+  --arcoblue-7: 244,202,72;
   --arcoblue-8: 7,44,166;
   --arcoblue-9: 3,26,121;
   --arcoblue-10: 0,13,77;
@@ -2115,7 +2115,7 @@ body {
   display: inline-block;
   position: relative;
   outline: none;
-  font-weight: 400;
+  font-weight: 600;
   -webkit-appearance: none;
      -moz-appearance: none;
           appearance: none;
@@ -2777,6 +2777,7 @@ a.arco-btn-icon-only {
 .arco-btn-size-default {
   padding: 0 15px;
   font-size: 14px;
+  font-weight: 600;
   height: 32px;
   border-radius: var(--border-radius-small);
 }
