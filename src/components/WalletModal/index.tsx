@@ -54,16 +54,6 @@ const WalletModal = observer((props: Props) => {
             <MetaMask width={30} height={30} />
           </a>
         )}
-        <div
-          className={styles.item}
-          onClick={() => {
-            props.onClose()
-            activate(walletconnect)
-          }}
-        >
-          <span>WalletConnect</span>
-          <WalletConnect width={30} height={30} />
-        </div>
       </div>
     </Modal>
   )
