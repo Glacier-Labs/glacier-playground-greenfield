@@ -24,6 +24,7 @@ import {
   IconDelete,
   IconEye
 } from '@arco-design/web-react/icon'
+import { useWeb3React } from '@web3-react/core'
 
 import styles from './style.module.scss'
 import { ReactComponent as IconDatabase } from '@assets/imgs/database.svg'
@@ -43,6 +44,7 @@ const DefaultCmd = 'find({}).skip(0).limit(10)'
 const Document = observer(
   forwardRef((props: Props, ref) => {
     const store = useStore()
+    const { account } = useWeb3React()
 
     const tab = useMemo(() => {
       return store.tabs[props.index]
@@ -93,6 +95,24 @@ const Document = observer(
       },
       [store, tab]
     )
+
+    const share = () => {
+      // const scan = `https://testnet.scan.glacier.io/dataset?namespace=${tab.namespace}&dataset=${tab.dataset}`
+      // const text = `Check out this decentralized database on glacier ${scan} via @Glacier_Labs`
+      const text = `🧊Write on Glacier Network to secure $GLC #airdrops for you and your friends.
+
+@Glacier_Labs is building a composable, modular and scalable L2 data network for large-scale Dapps.
+
+Join the #Referral Program via my link
+👉https://www.glacier.io/referral/?${account}
+
+#Campaign #Giveaways #Web3`
+
+      const url = `https://twitter.com/intent/tweet?text=${encodeURIComponent(
+        text
+      )}`
+      window.open(url)
+    }
 
     const columns = useMemo(() => {
       const cols: TableColumnProps<any>[] = [
@@ -196,6 +216,13 @@ const Document = observer(
               </Breadcrumb.Item>
             </Breadcrumb>
             <Space direction="vertical" align="end">
+              <Button
+                type="outline"
+                onClick={share}
+                target="_blank"
+              >
+                Share to Twitter
+              </Button>
               <Button
                 type="primary"
                 onClick={() => {

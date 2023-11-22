@@ -40,6 +40,12 @@ const Main = observer(() => {
           </Select>
           <span>Datasets: {store.datasets.length}</span>
         </Space>
+        <Button
+          type="primary"
+          href="https://www.glacier.io/referral/"
+          target="_blank"
+          icon={<IconUserAdd />}
+        >Invite</Button>
       </div>
       <div className={styles.content}>
         <div className={styles.left}>
