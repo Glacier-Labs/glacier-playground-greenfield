@@ -217,13 +217,13 @@ Join the #Referral Program via my link
               </Breadcrumb.Item>
             </Breadcrumb>
             <Space direction="vertical" align="end">
-              {/*<Button*/}
-              {/*  type="outline"*/}
-              {/*  onClick={share}*/}
-              {/*  target="_blank"*/}
-              {/*>*/}
-              {/*  Share to Twitter*/}
-              {/*</Button>*/}
+              <Button
+                type="outline"
+                onClick={share}
+                target="_blank"
+              >
+                Share to Twitter
+              </Button>
               <Button
                 type="primary"
                 onClick={() => {
