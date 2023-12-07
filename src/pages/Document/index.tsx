@@ -80,7 +80,11 @@ const Document = observer(
         Modal.confirm({
           title: 'Delete Document',
           simple: true,
-          content: `Delete document with id: ${doc._id} ?`,
+          content: (
+            <div className={styles.tip}>
+              Delete document with id: {doc._id} ?
+            </div>
+          ),
           onOk: async () => {
             await store.deleteDocument(
               tab.namespace,
